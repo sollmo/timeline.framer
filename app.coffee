@@ -5,8 +5,6 @@ sketch = Framer.Importer.load("imported/linked_timeline@1x")
 sketch.$02_list.x = 0
 sketch.list_white.x = 0
 
-
-
 # 리스트 자리에 Scroll 영역 설정
 scroll = new ScrollComponent
 	y: 604
@@ -17,7 +15,14 @@ scroll = new ScrollComponent
 sketch.$02_list.parent = scroll.content
 scroll.scrollHorizontal = false
 scroll.contentInset = 
-	top: -120
+	top: -123
+
+# gradient_framer_white의 layer hierarchy 조정을 위해 임시로 layer하나 생성해서 박음
+layer = new Layer
+	width: 750
+	height: 34
+	y: 604
+	image: "images/Layer-gradient_frame_white-odveqzyy.png"
 
 # sketch.$03_list.parent = sketch.list_selected_box
 sketch.list_selected_box.clip = true
@@ -30,10 +35,4 @@ scroll.content.on Events.Move, ->
 	sketch.list_white.y = scroll.content.y + 120
 # 	sketch.list_white.y = Utils.modulate(scroll.content.y, [0, i], [1, 0], true)
 
-layer = new Layer
-	width: 750
-	height: 34
-	y: 604
-	opacity: 1.00
-	image: "images/Layer-gradient_frame_white-odveqzyy.png"
 

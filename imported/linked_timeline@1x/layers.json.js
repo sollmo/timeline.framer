@@ -55,7 +55,7 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 			"x": 1780,
 			"y": 2505,
 			"width": 750,
-			"height": 1629
+			"height": 2075
 		},
 		"visible": true,
 		"metadata": {},
@@ -66,10 +66,38 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 				"x": 1780,
 				"y": 2505,
 				"width": 750,
-				"height": 1629
+				"height": 2075
 			}
 		},
-		"children": []
+		"children": [
+			{
+				"objectId": "04DA6B84-1E64-4760-922C-B4B002AD2696",
+				"kind": "group",
+				"name": "ic_right_copy_3",
+				"originalName": "ic_right copy 3",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 325,
+					"y": 1772,
+					"width": 101,
+					"height": 101
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 0.3983208955223881
+				},
+				"image": {
+					"path": "images/Layer-ic_right_copy_3-mdreqtzc.png",
+					"frame": {
+						"x": 325,
+						"y": 1772,
+						"width": 101,
+						"height": 101
+					}
+				},
+				"children": []
+			}
+		]
 	},
 	{
 		"objectId": "C8DCED76-9F22-4B49-8D8A-93825FB2D42B",
@@ -189,7 +217,7 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 					{
 						"objectId": "9E28FC55-8AE9-4B1B-AE3D-80A16148381F",
 						"kind": "group",
-						"name": "ic_right_copy_3",
+						"name": "ic_right_copy_31",
 						"originalName": "ic_right copy 3",
 						"maskFrame": null,
 						"layerFrame": {
