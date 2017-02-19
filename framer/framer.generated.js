@@ -362,9 +362,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 				"originalName": "gradient_frame_blue",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": -175,
+					"x": 0,
 					"y": 486,
-					"width": 1100,
+					"width": 750,
 					"height": 120
 				},
 				"visible": true,
@@ -374,9 +374,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 				"image": {
 					"path": "images/Layer-gradient_frame_blue-rey5ntlg.png",
 					"frame": {
-						"x": -175,
+						"x": 0,
 						"y": 486,
-						"width": 1100,
+						"width": 750,
 						"height": 120
 					}
 				},
@@ -389,9 +389,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 				"originalName": "list_selected",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": -90,
+					"x": -381,
 					"y": 127,
-					"width": 840,
+					"width": 1131,
 					"height": 479
 				},
 				"visible": true,
@@ -481,15 +481,69 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 						"children": []
 					},
 					{
-						"objectId": "E229E12A-11B3-4125-8CED-644BDC453188",
+						"objectId": "83772C2E-D60E-45BC-A2A5-EAFEB0F04B7B",
 						"kind": "group",
-						"name": "chart",
-						"originalName": "chart",
+						"name": "chart_line",
+						"originalName": "chart_line",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": -90,
+							"x": -381,
+							"y": 285,
+							"width": 762,
+							"height": 99
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-chart_line-odm3nzjd.png",
+							"frame": {
+								"x": -381,
+								"y": 285,
+								"width": 762,
+								"height": 99
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "ABB35CE5-9FD1-4173-8C71-0B905A43AE85",
+						"kind": "group",
+						"name": "chart_selected",
+						"originalName": "chart_selected",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 358,
+							"y": 311,
+							"width": 35,
+							"height": 35
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-chart_selected-qujcmzvd.png",
+							"frame": {
+								"x": 358,
+								"y": 311,
+								"width": 35,
+								"height": 35
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "E229E12A-11B3-4125-8CED-644BDC453188",
+						"kind": "group",
+						"name": "chart_back",
+						"originalName": "chart_back",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 0,
 							"y": 127,
-							"width": 840,
+							"width": 750,
 							"height": 361
 						},
 						"visible": true,
@@ -497,11 +551,11 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 							"opacity": 1
 						},
 						"image": {
-							"path": "images/Layer-chart-rtiyouux.png",
+							"path": "images/Layer-chart_back-rtiyouux.png",
 							"frame": {
-								"x": -90,
+								"x": 0,
 								"y": 127,
-								"width": 840,
+								"width": 750,
 								"height": 361
 							}
 						},
@@ -540,9 +594,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 	}
 ]
 if (DeviceComponent) {DeviceComponent.Devices["iphone-6-silver"].deviceImageJP2 = false};
-if (window.Framer) {window.Framer.Defaults.DeviceView = {"deviceScale":"fit","selectedHand":"","deviceType":"apple-iphone-7-gold","contentScale":1,"orientation":0};
+if (window.Framer) {window.Framer.Defaults.DeviceView = {"deviceScale":"fit","selectedHand":"","deviceType":"apple-iphone-7-rose-gold","contentScale":1,"orientation":0};
 }
-if (window.Framer) {window.Framer.Defaults.DeviceComponent = {"deviceScale":"fit","selectedHand":"","deviceType":"apple-iphone-7-gold","contentScale":1,"orientation":0};
+if (window.Framer) {window.Framer.Defaults.DeviceComponent = {"deviceScale":"fit","selectedHand":"","deviceType":"apple-iphone-7-rose-gold","contentScale":1,"orientation":0};
 }
 window.FramerStudioInfo = {"deviceImagesUrl":"\/_server\/resources\/DeviceImages","documentTitle":"timeline.framer"};
 

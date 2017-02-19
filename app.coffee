@@ -1,6 +1,8 @@
 # Import file "linked_timeline"
 sketch = Framer.Importer.load("imported/linked_timeline@1x")
 
+Framer.Device.background.backgroundColor = "dddddd"
+
 # Sketch에서 Artboard 2~3번에 있는 애들 Artboard 1번 자리로 이동
 sketch.$02_list.x = 0
 sketch.list_white.x = 0
@@ -28,11 +30,18 @@ layer = new Layer
 sketch.list_selected_box.clip = true
 sketch.list_white.parent = sketch.list_selected_box
 
-sketch.$02_list.on Events.Move, ->
-	print "a"
-	
 scroll.content.on Events.Move, ->
 	sketch.list_white.y = scroll.content.y + 120
-# 	sketch.list_white.y = Utils.modulate(scroll.content.y, [0, i], [1, 0], true)
-
-
+# 	print scroll.content.y
+	sketch.chart_line.x = Utils.modulate(scroll.content.y, [-122, -1446], [0, 750], true)
+# 	sketch.chart_line.x = -scroll.content.y - 100
+# 	print sketch.chart_line.x
+	i = 69
+	if sketch.chart_line.x < i
+		sketch.chart_selected.y = 184
+		sketch.chart_selected.scale = 	Utils.modulate(sketch.chart_line.x, [0, 10], [1, 0], true)	
+	if sketch.chart_line.x > (i*0)+(i/2) and sketch.chart_line.x < (i*1)
+		sketch.chart_selected.y = 200
+		sketch.chart_selected.scale = 	Utils.modulate(sketch.chart_line.x, [i-10, i], [0, 1], true)
+	if sketch.chart_line.x > (i*1) and sketch.chart_line.x < (i*1)+(i/2)
+		sketch.chart_selected.scale = 	Utils.modulate(sketch.chart_line.x, [i, i+10], [1, 0], true)
