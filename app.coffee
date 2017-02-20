@@ -20,7 +20,7 @@ scroll.contentInset =
 	top: -123
 scroll.speedY = 0.8
 scroll.content.draggable.momentumOptions =
-    friction: 7
+    friction: 5
     tolerance: 0.1
 
 # gradient_framer_white의 layer hierarchy 조정을 위해 임시로 layer하나 생성해서 박음
