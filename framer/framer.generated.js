@@ -75,28 +75,55 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 		},
 		"children": [
 			{
+				"objectId": "FAD3BAF3-38A9-483D-B62F-91F46A49F1A1",
+				"kind": "group",
+				"name": "Page_1",
+				"originalName": "Page 1",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 335,
+					"y": 1801,
+					"width": 80,
+					"height": 61
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 0.4
+				},
+				"image": {
+					"path": "images/Layer-Page_1-rkfem0jb.png",
+					"frame": {
+						"x": 335,
+						"y": 1801,
+						"width": 80,
+						"height": 61
+					}
+				},
+				"children": []
+			},
+			{
 				"objectId": "04DA6B84-1E64-4760-922C-B4B002AD2696",
 				"kind": "group",
 				"name": "ic_right_copy_3",
 				"originalName": "ic_right copy 3",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": 325,
-					"y": 1772,
-					"width": 101,
-					"height": 101
+					"x": 326,
+					"y": 1773,
+					"width": 99,
+					"height": 99
 				},
-				"visible": true,
+				"visible": false,
 				"metadata": {
 					"opacity": 0.3983208955223881
 				},
 				"image": {
 					"path": "images/Layer-ic_right_copy_3-mdreqtzc.png",
 					"frame": {
-						"x": 325,
-						"y": 1772,
-						"width": 101,
-						"height": 101
+						"x": 326,
+						"y": 1773,
+						"width": 99,
+						"height": 99
 					}
 				},
 				"children": []
@@ -389,9 +416,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 				"originalName": "list_selected",
 				"maskFrame": null,
 				"layerFrame": {
-					"x": -381,
+					"x": -751,
 					"y": 127,
-					"width": 1131,
+					"width": 1504,
 					"height": 479
 				},
 				"visible": true,
@@ -487,9 +514,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 						"originalName": "chart_line",
 						"maskFrame": null,
 						"layerFrame": {
-							"x": -381,
+							"x": -751,
 							"y": 285,
-							"width": 762,
+							"width": 1504,
 							"height": 99
 						},
 						"visible": true,
@@ -499,9 +526,9 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 						"image": {
 							"path": "images/Layer-chart_line-odm3nzjd.png",
 							"frame": {
-								"x": -381,
+								"x": -751,
 								"y": 285,
-								"width": 762,
+								"width": 1504,
 								"height": 99
 							}
 						},
