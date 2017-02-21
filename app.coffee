@@ -140,3 +140,5 @@ scroll2.content.on Events.AnimationEnd, ->
 		scroll2.content.animate
 			x: i*11
 			
+scroll.content.on Events.AnimationEnd, ->
+	j = 120
