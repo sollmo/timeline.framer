@@ -47,27 +47,96 @@ sketch.chart_line.parent = scroll2.content
 scroll2.scrollVertical = false
 scroll2.content.x = -753
 scroll2.speedX = 0.5
+# tolerance: Minimal movement threshold before we say the spring finished
+# 높아질 수록 DragAnimationEnd 이벤트가 빠르게 발생함.
+# friction:	number	How hard it is to move the object
 scroll2.content.draggable.momentumOptions =
     friction: 7
-    tolerance: 0.1
+    tolerance: 10
 
+# scroll.content = 타임라인에 이벤트.
 scroll.content.on Events.Move, ->
 	sketch.list_white.y = scroll.content.y + 120
 	scroll2.content.x = Utils.modulate(scroll.content.y, [-122, -1446], [-753, 0], true)
-# 	print scroll.content.y
-# 	sketch.chart_line.x = Utils.modulate(scroll.content.y, [-122, -1446], [0, 750], true)
-# 	sketch.chart_line.x = -scroll.content.y - 100
-# 	print sketch.chart_line.x
-# 	i = 69
-# 	if sketch.chart_line.x < i
-# 		sketch.chart_selected.y = 184
-# 		sketch.chart_selected.scale = 	Utils.modulate(sketch.chart_line.x, [0, 10], [1, 0], true)	
-# 	if sketch.chart_line.x > (i*0)+(i/2) and sketch.chart_line.x < (i*1)
-# 		sketch.chart_selected.y = 200
-# 		sketch.chart_selected.scale = 	Utils.modulate(sketch.chart_line.x, [i-10, i], [0, 1], true)
-# 	if sketch.chart_line.x > (i*1) and sketch.chart_line.x < (i*1)+(i/2)
-# 		sketch.chart_selected.scale = 	Utils.modulate(sketch.chart_line.x, [i, i+10], [1, 0], true)
 
+# scroll2.content = 그래프에 이벤트 
 scroll2.content.on Events.Move, ->
 	scroll.content.y = Utils.modulate(scroll2.content.x, [-753, 0], [-122,-1446], true)
 	sketch.list_white.y = scroll.content.y + 120
+
+sketch.chart_selected.visible = false
+
+scroll2.content.animationOptions = 
+	time: 0.3
+
+# scroll2.content 의 애니메이션이 끝날 때, point로 위치 자동 맞춤. i는 point간 거리. 
+# DragAnimationDidEnd를 썼을 때는 tolerance 조절이 에러가 나던데.. (end 이벤트가 상당히 자주 씹히는 현상 발생)
+scroll2.content.on Events.AnimationEnd, ->
+	i = -68.35
+	if scroll2.content.x > (i*0)+(i*0.5)
+		scroll2.content.animate
+			x: 0
+	if scroll2.content.x > (i*1) and scroll2.content.x <= (i*0)+(i*0.5)
+		scroll2.content.animate
+			x: i*1
+	if scroll2.content.x > (i*1)+(i*0.5) and scroll2.content.x <= (i*1)
+		scroll2.content.animate
+			x: i*1
+	if scroll2.content.x > (i*2) and scroll2.content.x <= (i*1)+(i*0.5) 
+		scroll2.content.animate
+			x: i*2
+	if scroll2.content.x > (i*2)+(i*0.5) and scroll2.content.x <= (i*2) 
+		scroll2.content.animate
+			x: i*2
+	if scroll2.content.x > (i*3) and scroll2.content.x <= (i*2)+(i*0.5)
+		scroll2.content.animate
+			x: i*3
+	if scroll2.content.x > (i*3)+(i*0.5) and scroll2.content.x <= (i*3)
+		scroll2.content.animate
+			x: i*3		
+	if scroll2.content.x > (i*4) and scroll2.content.x <= (i*3)+(i*0.5)
+		scroll2.content.animate
+			x: i*4
+	if scroll2.content.x > (i*4)+(i*0.5) and scroll2.content.x <= (i*4)
+		scroll2.content.animate
+			x: i*4
+	if scroll2.content.x > (i*5) and scroll2.content.x <= (i*4)+(i*0.5)
+		scroll2.content.animate
+			x: i*5
+	if scroll2.content.x > (i*5)+(i*0.5) and scroll2.content.x <= (i*5)
+		scroll2.content.animate
+			x: i*5
+	if scroll2.content.x > (i*6) and scroll2.content.x <= (i*5)+(i*0.5)
+		scroll2.content.animate
+			x: i*6
+	if scroll2.content.x > (i*6)+(i*0.5) and scroll2.content.x <= (i*6)
+		scroll2.content.animate
+			x: i*6
+	if scroll2.content.x > (i*7) and scroll2.content.x <= (i*6)+(i*0.5)
+		scroll2.content.animate
+			x: i*7
+	if scroll2.content.x > (i*7)+(i*0.5) and scroll2.content.x <= (i*7)
+		scroll2.content.animate
+			x: i*7
+	if scroll2.content.x > (i*8) and scroll2.content.x <= (i*7)+(i*0.5)
+		scroll2.content.animate
+			x: i*8
+	if scroll2.content.x > (i*8)+(i*0.5) and scroll2.content.x <= (i*8)
+		scroll2.content.animate
+			x: i*8
+	if scroll2.content.x > (i*9) and scroll2.content.x <= (i*8)+(i*0.5)
+		scroll2.content.animate
+			x: i*9
+	if scroll2.content.x > (i*9)+(i*0.5) and scroll2.content.x <= (i*9)
+		scroll2.content.animate
+			x: i*9
+	if scroll2.content.x > (i*10) and scroll2.content.x <= (i*9)+(i*0.5)
+		scroll2.content.animate
+			x: i*10
+	if scroll2.content.x > (i*10)+(i*0.5) and scroll2.content.x <= (i*10)
+		scroll2.content.animate
+			x: i*10
+	if scroll2.content.x > (i*11) and scroll2.content.x <= (i*10)+(i*0.5)
+		scroll2.content.animate
+			x: i*11
+			
