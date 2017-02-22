@@ -17,7 +17,7 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 		"backgroundColor": "rgba(255, 255, 255, 1)",
 		"children": [
 			{
-				"objectId": "49A1FD18-E2ED-42E3-ADBA-C6B64244A319",
+				"objectId": "4E658966-AB77-450C-85A2-D6179624EF0F",
 				"kind": "group",
 				"name": "list_white",
 				"originalName": "list_white",
@@ -26,19 +26,19 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 					"x": -1,
 					"y": 0,
 					"width": 757,
-					"height": 1448
+					"height": 1466
 				},
 				"visible": true,
 				"metadata": {
 					"opacity": 1
 				},
 				"image": {
-					"path": "images/Layer-list_white-ndlbmuze.png",
+					"path": "images/Layer-list_white-neu2ntg5.png",
 					"frame": {
 						"x": -1,
 						"y": 0,
 						"width": 757,
-						"height": 1448
+						"height": 1466
 					}
 				},
 				"children": []
@@ -55,7 +55,7 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 			"x": 1780,
 			"y": 2505,
 			"width": 750,
-			"height": 2075
+			"height": 2095
 		},
 		"visible": true,
 		"metadata": {},
@@ -66,7 +66,7 @@ window.__imported__["linked_timeline@1x/layers.json.js"] = [
 				"x": 1780,
 				"y": 2505,
 				"width": 750,
-				"height": 2075
+				"height": 2095
 			}
 		},
 		"children": [
